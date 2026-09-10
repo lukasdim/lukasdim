@@ -1,8 +1,10 @@
 # Hi, I'm Lukas
 
-I'm a CS undergrad at Northeastern. 
+I'm a CS undergrad at Northeastern.
 
 My current focus is AI inference optimization through model quantization kernels, KV-Cache quantization, and inference infrastructure.
+
+Check out my [resume (Web PDF)](https://github.com/lukasdim/lukasdim/blob/main/RESUME.pdf)!
 
 ## Current Project
 
