@@ -11,10 +11,11 @@ Check out my [resume (Web PDF)](https://github.com/lukasdim/lukasdim/blob/main/R
 ### ARM NEON kernels for `IQ4_NL_Q8_0` — ggml / llama.cpp
 Optimizing 4-bit quantized inference on **non-dotprod ARMv8.0-A** (testing on Cortex-A53 architecture), where ggml's dispatch silently falls back to an unaccelerated generic path.
 
-- Identified a missing batched repacked GEMM kernel for non-dotprod ARMv8.0
+- Identified a missing batched repacked GEMM and GEMV kernel for non-dotprod ARMv8.0
 - Kernel work in `ggml-cpu/arch/arm/repack.cpp`, portable to llama.cpp's ggml dependency
+- End-to-end GEMM speedup measured at 2.09x and GEMV at 1.33x
 
-Finalizing tests before opening PR
+More details can be found in the PR [here](https://github.com/ggml-org/llama.cpp/pull/30165)
 
 ## Previous Projects
 
